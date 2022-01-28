@@ -1,4 +1,4 @@
-#include <windows.h>
+#include "pch.h"
 
 #define MAX_NAME_SZ 256
 #define HInstance() GetModuleHandle(NULL)
@@ -9,13 +9,29 @@ WCHAR WindowTitle[MAX_NAME_SZ];
 INT WinWidth;
 INT WinHeight;
 
+HICON hIcon;
+
+LRESULT CALLBACK WProcess(HWND hWnd, UINT msg, WPARAM wparam, LPARAM lparam) 
+{
+	switch (msg) {
+		case WM_DESTROY:
+			PostQuitMessage(0);
+			break;
+	}
+
+	return DefWindowProc(hWnd, msg, wparam, lparam);
+}
+
+
 int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT )
 {
 	// globals
-	wcscpy_s(WindowClass, TEXT("a Name"));
-	wcscpy_s(WindowTitle, TEXT("Titteli"));
+	LoadString(HInstance(), IDS_PERGAMENAME, WindowClass, MAX_NAME_SZ);
+	LoadString(HInstance(), IDS_WINDOWTITLE, WindowTitle, MAX_NAME_SZ);
 	WinWidth = 1920;
 	WinHeight = 1080;
+
+	hIcon = LoadIcon(HInstance(), MAKEINTRESOURCE(IDI_MAINICON));
 
 	// window class
 	WNDCLASSEX wex;
@@ -27,15 +43,15 @@ int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT )
 	wex.hCursor = LoadCursor(nullptr, IDC_ARROW);
 	wex.hbrBackground = (HBRUSH)GetStockObject(NULL_BRUSH);
 
-	wex.hIcon = LoadIcon(0, IDI_APPLICATION);
-	wex.hIconSm = LoadIcon(0, IDI_APPLICATION);
+	wex.hIcon = hIcon;
+	wex.hIconSm = hIcon;
 
 	wex.lpszClassName = WindowClass;
 	wex.lpszMenuName = nullptr;
 	
 	wex.hInstance = HInstance();
 
-	wex.lpfnWndProc = DefWindowProc;
+	wex.lpfnWndProc = WProcess;
 	RegisterClassEx(&wex);
 
 	// Window

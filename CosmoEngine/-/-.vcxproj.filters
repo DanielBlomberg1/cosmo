@@ -19,10 +19,37 @@
     <Filter Include="Recources">
       <UniqueIdentifier>{8652417d-38b1-4d9f-bad7-7ea0e5bc3df4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\pch">
+      <UniqueIdentifier>{900ca38d-4bd3-4807-b6e7-3d84f9aa06dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Recources\icons">
+      <UniqueIdentifier>{367d5740-4e00-47e0-aee7-43373503a684}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\WinMain.cpp">
       <Filter>Source\Private</Filter>
     </ClCompile>
+    <ClCompile Include="Source\pch.cpp">
+      <Filter>Source\pch</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\pch.h">
+      <Filter>Source\pch</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Recources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="-.rc">
+      <Filter>Recources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\icons\ye.ico">
+      <Filter>Recources\icons</Filter>
+    </Image>
   </ItemGroup>
 </Project>

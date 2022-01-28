@@ -1,1 +1,3 @@
-﻿  -.vcxproj -> E:\Coding\Git\cosmo\CosmoEngine\Build\-\Debug\-.exe
+﻿  WinMain.cpp
+  pch.cpp
+  -.vcxproj -> E:\Coding\Git\cosmo\CosmoEngine\Build\-\Debug\-.exe
