@@ -9,7 +9,7 @@ WCHAR WindowTitle[MAX_NAME_SZ];
 INT WinWidth;
 INT WinHeight;
 
-int CALLBACK WinMain(HINSTANCE, LPSTR, INT ) 
+int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT )
 {
 	// globals
 	wcscpy_s(WindowClass, TEXT("a Name"));
@@ -41,7 +41,25 @@ int CALLBACK WinMain(HINSTANCE, LPSTR, INT )
 	// Window
 
 	HWND hWnd = CreateWindow(WindowClass, WindowTitle, WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, 0, WinWidth, WinHeight, nullptr, nullptr, HInstance(), nullptr);
+	if (!hWnd) {
+		MessageBeep(0);
+		MessageBox(0, L"Window Creation Failed", 0, 0);
+		return 0;
+	}
+
 	ShowWindow(hWnd, SW_SHOW);
+
+	// Looping Function
+
+	MSG msg{ 0 };
+	while (msg.message != WM_QUIT) 
+	{
+		if (PeekMessage(&msg, 0, 0, 0, PM_REMOVE))
+		{
+			TranslateMessage(&msg);
+			DispatchMessage(&msg);
+		}
+	}
 
 	return 0;
 }
