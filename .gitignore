@@ -30,3 +30,5 @@
 *.exe
 *.out
 *.app
+/CosmoEngine/.vs/CosmoEngine/v16
+/CosmoEngine/.vs/CosmoEngine/v17
