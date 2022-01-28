@@ -399,6 +399,7 @@ FodyWeavers.xsd
 *.dylib
 *.dll
 
+
 # Fortran module files
 *.mod
 *.smod
@@ -415,3 +416,11 @@ FodyWeavers.xsd
 *.app
 /CosmoEngine/.vs/CosmoEngine/v16
 /CosmoEngine/.vs/CosmoEngine/v17
+
+# annoying things
+.ilk
+.log
+.idp
+.pdb
+.tlog
+
