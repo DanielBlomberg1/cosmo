@@ -8,6 +8,7 @@ public:
 	Application();
 	~Application();
 public:
+	VOID SetupSettingsForGame();
 	VOID Initialize();
 	VOID Update();
 };

@@ -7,6 +7,7 @@ public:
 	IApplication();
 	virtual ~IApplication() {};
 public:
+	virtual VOID SetupSettingsForGame() = 0;
 	virtual VOID Initialize() = 0;
 	virtual VOID Update() = 0;
 };

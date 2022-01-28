@@ -10,7 +10,12 @@
       "ProjectGuid": "c979d67d-c91c-4c75-a503-b35c5bd3eb9d",
       "DisplayName": "-",
       "ColorIndex": 0
+    },
+    "82f1dbc7-bcce-43cd-b5d1-4e384aee5577": {
+      "ProjectGuid": "82f1dbc7-bcce-43cd-b5d1-4e384aee5577",
+      "DisplayName": "Cosmo",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
