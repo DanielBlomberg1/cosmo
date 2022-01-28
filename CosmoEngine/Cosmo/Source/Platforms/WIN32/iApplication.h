@@ -1,6 +1,6 @@
 #pragma once
 
-class IApplication {
+class COSMO_API IApplication {
 public:
 	IApplication();
 	virtual ~IApplication() = 0;
