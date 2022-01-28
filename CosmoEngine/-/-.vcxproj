@@ -62,6 +62,7 @@
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>E:\Coding\Git\cosmo\CosmoEngine\-\Source;E:\Coding\Git\cosmo\CosmoEngine\Cosmo\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -78,6 +79,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>E:\Coding\Git\cosmo\CosmoEngine\-\Source;E:\Coding\Git\cosmo\CosmoEngine\Cosmo\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -101,6 +103,11 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\icons\ye.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cosmo\Cosmo.vcxproj">
+      <Project>{82f1dbc7-bcce-43cd-b5d1-4e384aee5577}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

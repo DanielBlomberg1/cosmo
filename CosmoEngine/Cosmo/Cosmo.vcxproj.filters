@@ -35,22 +35,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Cosmo.cpp">
-      <Filter>Source\pch</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Platforms\WIN32\iApplication.cpp">
       <Filter>Source\Private\Platform\WIN32</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Cosmo.cpp">
+      <Filter>Source\pch</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Cosmo.h">
-      <Filter>Source\pch</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Platforms\WIN32\WinEntry.h">
       <Filter>Source\Public\Platform\WIN32</Filter>
     </ClInclude>
     <ClInclude Include="Source\Platforms\WIN32\iApplication.h">
       <Filter>Source\Public\Platform\WIN32</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Cosmo.h">
+      <Filter>Source\pch</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

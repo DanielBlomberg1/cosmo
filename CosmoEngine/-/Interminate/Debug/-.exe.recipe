@@ -2,6 +2,9 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
+      <FullPath>E:\Coding\Git\cosmo\CosmoEngine\Build\Cosmo\Debug\Cosmo.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
       <FullPath>E:\Coding\Git\cosmo\CosmoEngine\Build\-\Debug\-.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>

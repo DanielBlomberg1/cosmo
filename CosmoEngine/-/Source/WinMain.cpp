@@ -23,7 +23,7 @@ VOID WindowInit();
 LRESULT CALLBACK WProcess(HWND hWnd, UINT msg, WPARAM wparam, LPARAM lparam);
 #pragma endregion
 
-
+/*
 int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT )
 {
 	InitializeVariables();
@@ -32,6 +32,8 @@ int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT )
 	MessageLoop();
 	return 0;
 }
+
+*/
 
 // FUNCTIONS //
 #pragma region Func
