@@ -33,6 +33,9 @@
     <ClCompile Include="Source\pch.cpp">
       <Filter>Source\pch</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Application.cpp">
+      <Filter>Source\Private</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\pch.h">
@@ -40,6 +43,9 @@
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Recources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application.h">
+      <Filter>Source\Private</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

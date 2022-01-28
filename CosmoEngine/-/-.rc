@@ -57,13 +57,52 @@ IDI_MAINICON            ICON                    "Assets\\icons\\ye.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040b04b0"
+        BEGIN
+            VALUE "CompanyName", "Daniel Blomberg"
+            VALUE "FileDescription", "Kosmo Engine"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "-.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2022"
+            VALUE "OriginalFilename", "-.exe"
+            VALUE "ProductName", "KosmoEngine"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40b, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // String Table
 //
 
 STRINGTABLE
 BEGIN
     IDS_PERGAMENAME         "WindowClass"
-    IDS_WINDOWTITLE         "CosmoEngine"
+    IDS_WINDOWTITLE         "CosmoGame"
 END
 
 #endif    // Finnish (Finland) resources
