@@ -10,6 +10,8 @@ namespace Engine {
 		SERVER
 	};
 
+	std::wstring COSMO_API EngineModeToString();
+
 	extern OEngine gKosmoEngine;
 }
 
@@ -21,4 +23,8 @@ public:
 	~OEngine();
 private:
 	EngineMode EM;
+
+public:
+	EngineMode GetEngineMode();
+	VOID SetEngineMode(EngineMode mode);
 };
