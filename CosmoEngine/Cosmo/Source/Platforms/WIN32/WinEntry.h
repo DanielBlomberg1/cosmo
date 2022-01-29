@@ -1,7 +1,7 @@
 #include "Cosmo.h"
 #include "iApplication.h"
 
-extern IApplication* EntryApplication();
+extern Win32::IApplication* EntryApplication();
 
 int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 {

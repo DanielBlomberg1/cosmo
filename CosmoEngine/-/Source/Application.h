@@ -1,9 +1,9 @@
 #pragma once
 #include "pch.h"
 
-#include "Platforms/WIN32/IApplication.h"
+#include "Engine/Simulation.h"
 
-class Application : public IApplication {
+class Application : public Cosmo::Simulation {
 public:
 	Application();
 	~Application();

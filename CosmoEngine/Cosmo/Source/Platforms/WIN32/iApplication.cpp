@@ -1,6 +1,8 @@
 #include "Cosmo.h"
 #include "iApplication.h"
 
-IApplication::IApplication()
-{
+namespace Win32 {
+	IApplication::IApplication()
+	{
+	}
 }

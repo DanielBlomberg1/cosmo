@@ -12,32 +12,8 @@
     <Filter Include="Source">
       <UniqueIdentifier>{4e8c7212-0d9d-4d61-9b16-105ef7ea26ae}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Public">
-      <UniqueIdentifier>{f6e01b62-aa90-4975-97aa-32a82e6d9c93}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Private">
-      <UniqueIdentifier>{08a28a01-0331-4cab-a161-e780760c02db}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\pch">
       <UniqueIdentifier>{5337e949-4a54-461f-b98a-faa7c640bed0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Private\Platform">
-      <UniqueIdentifier>{a2a472f6-6b59-46de-9fa7-b851012d0836}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Private\Platform\WIN32">
-      <UniqueIdentifier>{bed10c68-2f59-4914-bff5-a89128cc3933}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Public\Platform">
-      <UniqueIdentifier>{8c943351-6ce9-4ad5-b685-150228cc8f77}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Public\Platform\WIN32">
-      <UniqueIdentifier>{5a5baf98-7749-46d0-9c3b-b791916ba58d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Private\Common">
-      <UniqueIdentifier>{d101b6b7-6b58-420d-9813-e71eb03b7b10}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Public\Common">
-      <UniqueIdentifier>{93957988-e45a-4668-93f4-1e6e8aadfbf5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\Core">
       <UniqueIdentifier>{e98d89d0-2f04-44b1-ace5-95cf3b792868}</UniqueIdentifier>
@@ -51,39 +27,72 @@
     <Filter Include="Source\Core\Classes">
       <UniqueIdentifier>{cd63d603-d43b-40c1-8f0a-5f9efdfe760f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Engine">
+      <UniqueIdentifier>{be133902-542f-46f3-a049-82cfb229b3d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine\Public">
+      <UniqueIdentifier>{8b305755-e6f2-4650-8774-e416d3955b33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine\Private">
+      <UniqueIdentifier>{eec54fa0-1a68-416a-983c-74e5fead306e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine\Classes">
+      <UniqueIdentifier>{e116ed84-654f-4f09-b9f4-50fda4b39904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Common">
+      <UniqueIdentifier>{8d6d7d94-c160-4d2a-9e44-a45ae6cacda2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Platform">
+      <UniqueIdentifier>{591677bf-0ad7-4fdc-b132-bd39c74728bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Common\Private">
+      <UniqueIdentifier>{cb2e2592-7787-4c60-98ff-cc50bbbb8b63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Common\Public">
+      <UniqueIdentifier>{175623f5-7487-47e8-acd4-bfddc0491560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Platform\WIN32">
+      <UniqueIdentifier>{b43545d6-3a4f-409b-897b-6774702ebb50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Platform\WIN32\Private">
+      <UniqueIdentifier>{aff419eb-4e16-4f09-9de6-260f7c107e38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Platform\WIN32\Public">
+      <UniqueIdentifier>{c74b0a60-01e1-466d-8fb6-109da77ad6ef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Platforms\WIN32\iApplication.cpp">
-      <Filter>Source\Private\Platform\WIN32</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Cosmo.cpp">
       <Filter>Source\pch</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Common\Logger.cpp">
-      <Filter>Source\Private\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Common\Time.cpp">
-      <Filter>Source\Private\Common</Filter>
     </ClCompile>
     <ClCompile Include="Source\Core\PerGameSettings.cpp">
       <Filter>Source\Core\Private</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Core\Core.cpp">
+      <Filter>Source\Core\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\CoreMin.cpp">
+      <Filter>Source\Core\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Simulation.cpp">
+      <Filter>Source\Engine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\OEngine.cpp">
+      <Filter>Source\Engine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Time.cpp">
+      <Filter>Source\Common\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Logger.cpp">
+      <Filter>Source\Common\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Platforms\WIN32\iApplication.cpp">
+      <Filter>Source\Platform\WIN32\Private</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Platforms\WIN32\WinEntry.h">
-      <Filter>Source\Public\Platform\WIN32</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Platforms\WIN32\iApplication.h">
-      <Filter>Source\Public\Platform\WIN32</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Cosmo.h">
       <Filter>Source\pch</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Common\Logger.h">
-      <Filter>Source\Public\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Common\Time.h">
-      <Filter>Source\Public\Common</Filter>
     </ClInclude>
     <ClInclude Include="Source\Core\PerGameSettings.h">
       <Filter>Source\Core\Classes</Filter>
@@ -93,6 +102,24 @@
     </ClInclude>
     <ClInclude Include="Source\Core\CoreMin.h">
       <Filter>Source\Core\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\OEngine.h">
+      <Filter>Source\Engine\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Simulation.h">
+      <Filter>Source\Engine\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Time.h">
+      <Filter>Source\Common\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Logger.h">
+      <Filter>Source\Common\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platforms\WIN32\WinEntry.h">
+      <Filter>Source\Platform\WIN32\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platforms\WIN32\iApplication.h">
+      <Filter>Source\Platform\WIN32\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
