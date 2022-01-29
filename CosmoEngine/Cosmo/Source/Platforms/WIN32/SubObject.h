@@ -20,6 +20,8 @@ namespace Win32 {
 		std::wstring m_Title;
 
 		HICON m_Icon;
+
+		HWND m_Handle;
 	};
 
 }

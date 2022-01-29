@@ -22,7 +22,7 @@ namespace Win32 {
 		wex.cbWndExtra = 0;
 
 		wex.hCursor = LoadCursor(nullptr, IDC_ARROW);
-		wex.hbrBackground = (HBRUSH)GetStockObject(NULL_BRUSH);
+		wex.hbrBackground = (HBRUSH)(CreateSolidBrush(RGB(46,46,46)));
 
 		wex.hIcon = m_Icon;
 		wex.hIconSm = m_Icon;
