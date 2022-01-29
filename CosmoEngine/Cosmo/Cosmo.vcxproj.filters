@@ -68,12 +68,6 @@
     <ClCompile Include="Source\Core\PerGameSettings.cpp">
       <Filter>Source\Core\Private</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Core\Core.cpp">
-      <Filter>Source\Core\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Core\CoreMin.cpp">
-      <Filter>Source\Core\Private</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Platforms\WIN32\WinEntry.h">
