@@ -155,6 +155,8 @@
   <ItemGroup>
     <ClCompile Include="Source\Common\Logger.cpp" />
     <ClCompile Include="Source\Common\Time.cpp" />
+    <ClCompile Include="Source\Core\Core.cpp" />
+    <ClCompile Include="Source\Core\CoreMin.cpp" />
     <ClCompile Include="Source\Core\PerGameSettings.cpp" />
     <ClCompile Include="Source\Cosmo.cpp" />
     <ClCompile Include="Source\Platforms\WIN32\iApplication.cpp" />
@@ -162,6 +164,8 @@
   <ItemGroup>
     <ClInclude Include="Source\Common\Logger.h" />
     <ClInclude Include="Source\Common\Time.h" />
+    <ClInclude Include="Source\Core\Core.h" />
+    <ClInclude Include="Source\Core\CoreMin.h" />
     <ClInclude Include="Source\Core\PerGameSettings.h" />
     <ClInclude Include="Source\Cosmo.h" />
     <ClInclude Include="Source\Platforms\WIN32\iApplication.h" />

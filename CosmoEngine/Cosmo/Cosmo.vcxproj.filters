@@ -39,11 +39,17 @@
     <Filter Include="Source\Public\Common">
       <UniqueIdentifier>{93957988-e45a-4668-93f4-1e6e8aadfbf5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Private\Core">
+    <Filter Include="Source\Core">
       <UniqueIdentifier>{e98d89d0-2f04-44b1-ace5-95cf3b792868}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Public\Core">
-      <UniqueIdentifier>{f81cc6be-453a-4bad-ab36-f66b8d72a547}</UniqueIdentifier>
+    <Filter Include="Source\Core\Public">
+      <UniqueIdentifier>{218afce6-46c5-4f5b-97d6-5736140865e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Private">
+      <UniqueIdentifier>{30fd2916-3c4b-4f64-92da-28b549db823a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Classes">
+      <UniqueIdentifier>{cd63d603-d43b-40c1-8f0a-5f9efdfe760f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -56,11 +62,17 @@
     <ClCompile Include="Source\Common\Logger.cpp">
       <Filter>Source\Private\Common</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Core\PerGameSettings.cpp">
-      <Filter>Source\Private\Core</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Common\Time.cpp">
       <Filter>Source\Private\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\PerGameSettings.cpp">
+      <Filter>Source\Core\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Core.cpp">
+      <Filter>Source\Core\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\CoreMin.cpp">
+      <Filter>Source\Core\Private</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -76,11 +88,17 @@
     <ClInclude Include="Source\Common\Logger.h">
       <Filter>Source\Public\Common</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Core\PerGameSettings.h">
-      <Filter>Source\Public\Core</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Common\Time.h">
       <Filter>Source\Public\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\PerGameSettings.h">
+      <Filter>Source\Core\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Core.h">
+      <Filter>Source\Core\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\CoreMin.h">
+      <Filter>Source\Core\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
