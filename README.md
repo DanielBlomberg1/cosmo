@@ -1,2 +1,2 @@
 # cosmo
-c++ game engine with dx12
+c++ game engine work in progress
