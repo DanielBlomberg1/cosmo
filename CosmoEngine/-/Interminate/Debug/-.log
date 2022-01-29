@@ -1,7 +1,4 @@
 ﻿          1 file(s) copied.
   Application.cpp
 E:\Coding\Git\cosmo\CosmoEngine\Cosmo\Source\Platforms\WIN32\WinEntry.h(16,12): warning C4551: function call missing argument list
-  WinMain.cpp
-  pch.cpp
-  LINK : E:\Coding\Git\cosmo\CosmoEngine\\Build\-\Debug\-.exe not found or not built by the last incremental link; performing full link
   -.vcxproj -> E:\Coding\Git\cosmo\CosmoEngine\Build\-\Debug\-.exe

@@ -1,5 +1,6 @@
 #include "Cosmo.h"
 #include "iApplication.h"
+#include "Common/CmdArgs.h"
 
 extern Win32::IApplication* EntryApplication();
 
@@ -9,13 +10,14 @@ int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 
 	PerGameSettings pgs;
 
-	
-
 	EntryPoint->SetupSettingsForGame();
+
 	Logger logger;
 	if (logger.Instance) {
 		MessageBox(0, L"logger online",0,0);
 	}
+
+	CmdArgs::ReadArgs();
 
 	EntryPoint->Initialize();
 
