@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CosmoEngine",
+    "\\CosmoEngine\\Cosmo",
+    "\\CosmoEngine\\Cosmo\\Source",
+    "\\CosmoEngine\\Cosmo\\Source\\Common",
+    "\\CosmoEngine\\Cosmo\\Source\\Core",
+    "\\CosmoEngine\\Cosmo\\Source\\Engine",
+    "\\CosmoEngine\\Cosmo\\Source\\Platforms"
   ],
-  "SelectedNode": "\\CosmoEngine.sln",
+  "SelectedNode": "\\CosmoEngine\\Cosmo\\Source\\Platforms",
   "PreviewInSolutionExplorer": false
 }
