@@ -1,1 +1,3 @@
-﻿  -.vcxproj -> E:\Coding\Git\cosmo\CosmoEngine\Build\-\Debug\-.exe
+﻿  Application.cpp
+E:\Coding\Git\cosmo\CosmoEngine\Cosmo\Source\Platforms\WIN32\WinEntry.h(16,12): warning C4551: function call missing argument list
+  -.vcxproj -> E:\Coding\Git\cosmo\CosmoEngine\Build\-\Debug\-.exe

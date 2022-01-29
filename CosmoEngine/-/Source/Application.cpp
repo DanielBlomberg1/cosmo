@@ -1,7 +1,7 @@
 #include "Application.h"
 #include "pch.h"
 #include "Platforms/WIN32/WinEntry.h"
-
+#include <ShlObj.h>
 ENTRYAPP(Application);
 
 Application::Application()
@@ -22,7 +22,11 @@ VOID Application::SetupSettingsForGame()
 
 VOID Application::Initialize()
 {
-	Logger::Print(L"I Have loaded up");
+	Logger::PrintDebugSeperator();
+	Logger::Print(L"Initialized \n");
+	Logger::Print(L"Game name : %s\n", PerGameSettings::GameName());
+	Logger::PrintDebugSeperator();
+
 	return VOID();
 }
 
