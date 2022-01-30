@@ -1,6 +1,8 @@
 #include "Cosmo.h"
 #include "SScreen.h"
 
+#include "Platforms/WIN32/Win32Utils.h"
+
 namespace SScreen
 {
 #define WM_OUTPUTMESSAGE (WM_USER + 0x0001)
@@ -47,6 +49,8 @@ LRESULT SWindow::MessageHandler(HWND hwnd, UINT message, WPARAM wParam, LPARAM l
 		PAINTSTRUCT pS;
 
 		hdc = BeginPaint(hwnd, &pS);
+
+		Win32::Utils::AddBitmap(L"E:\\Coding\\Git\\cosmo\\CosmoEngine\\Cosmo\\Source\\Assets\\SScreen.bmp", hdc);
 
 		SetBkMode(hdc, TRANSPARENT);
 		SetTextColor(hdc, RGB(200, 200, 200));

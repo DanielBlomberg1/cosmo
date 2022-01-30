@@ -104,6 +104,9 @@
     <ClCompile Include="Source\Platforms\WIN32\Window.cpp">
       <Filter>Source\Platform\WIN32\Private</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Platforms\WIN32\Win32Utils.cpp">
+      <Filter>Source\Platform\WIN32\Private</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Cosmo.h">
@@ -147,6 +150,9 @@
     </ClInclude>
     <ClInclude Include="Source\Platforms\WIN32\Window.h">
       <Filter>Source\Platform\WIN32\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platforms\WIN32\Win32Utils.h">
+      <Filter>Source\Platform\WIN32\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
