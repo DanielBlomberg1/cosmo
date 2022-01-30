@@ -5,7 +5,7 @@
 namespace SScreen {
 	VOID COSMO_API Open();
 	VOID COSMO_API Close();
-	VOID COSMO_API AddMessage();
+	VOID COSMO_API AddMessage(const WCHAR* msg);
 }
 
 class COSMO_API SWindow : public Win32::Window {

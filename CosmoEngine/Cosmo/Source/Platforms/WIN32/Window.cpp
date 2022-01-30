@@ -22,6 +22,7 @@ namespace Win32 {
 		AdjustWindowRect(&R, WS_OVERLAPPEDWINDOW, false);
 		int width = R.right - R.left;
 		int height = R.bottom - R.top;
+
 		m_Handle = CreateWindow(m_Class.c_str(), m_Title.c_str(), WS_POPUPWINDOW, ((desktop.right / 2) - (m_Width / 2)), ((desktop.bottom / 2) - (m_Height / 2)), m_Width, m_Height, 0, 0, HInstance(), (void*)this);
 		if (!m_Handle) {
 			MessageBeep(0);
