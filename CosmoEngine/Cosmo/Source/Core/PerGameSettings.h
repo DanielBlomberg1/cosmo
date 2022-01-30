@@ -12,6 +12,7 @@ private:
 	WCHAR g_ShortName[MX_STR];
 	HICON g_Icon;
 	WCHAR g_InitTime[MX_STR];
+	WCHAR m_SplashURL[MX_STR];
 public:
 	static WCHAR* GameName() { return instance->g_Name; }
 	static VOID SetGameName(UINT id) { LoadString(HInstance(), id, instance->g_Name, MX_STR); }

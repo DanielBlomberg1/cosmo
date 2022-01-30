@@ -104,6 +104,7 @@ BEGIN
     IDS_PERGAMENAME         "WindowClass"
     IDS_WINDOWTITLE         "Example Game"
     IDS_SHORTNAME           "Gp"
+    IDS_SPLASHURL           "Content\\Images\\Default.bmp"
 END
 
 #endif    // Finnish (Finland) resources
