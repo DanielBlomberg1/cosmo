@@ -7,5 +7,7 @@ namespace Cosmo {
 	public:
 		Simulation();
 		~Simulation();
+
+		virtual VOID PreInitialization() override;
 	};
 }

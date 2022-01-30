@@ -27,22 +27,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\pch.cpp">
-      <Filter>Source\pch</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Application.cpp">
+    <ClCompile Include="Source\Game.cpp">
       <Filter>Source\Private</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\pch.h">
-      <Filter>Source\pch</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Recources</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Application.h">
-      <Filter>Source\Private</Filter>
+    <ClInclude Include="Source\Game.h">
+      <Filter>Source\Public</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

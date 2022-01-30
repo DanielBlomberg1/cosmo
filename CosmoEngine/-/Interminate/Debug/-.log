@@ -1,8 +1,3 @@
 ﻿          1 file(s) copied.
-  Application.cpp
-E:\Coding\Git\cosmo\CosmoEngine\Cosmo\Source\Platforms\WIN32\SubObject.h(19,16): warning C4251: 'Win32::SObject::m_Class': class 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' needs to have dll-interface to be used by clients of class 'Win32::SObject'
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\xstring(4921): message : see declaration of 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'
-E:\Coding\Git\cosmo\CosmoEngine\Cosmo\Source\Platforms\WIN32\SubObject.h(20,16): warning C4251: 'Win32::SObject::m_Title': class 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' needs to have dll-interface to be used by clients of class 'Win32::SObject'
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\xstring(4921): message : see declaration of 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'
-  pch.cpp
+  Game.cpp
   -.vcxproj -> E:\Coding\Git\cosmo\CosmoEngine\Build\-\Debug\-.exe

@@ -1,7 +1,7 @@
 #include "Cosmo.h"
 #include "iApplication.h"
 #include "Common/CmdArgs.h"
-#include "Engine/SScreen.h"
+
 
 extern Win32::IApplication* EntryApplication();
 
@@ -15,7 +15,7 @@ int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 
 	Logger logger;
 
-	SScreen::Open();
+	EntryPoint->PreInitialization();
 
 	/*
 	* 	if (logger.Instance) {
